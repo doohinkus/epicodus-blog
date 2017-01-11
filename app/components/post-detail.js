@@ -1,14 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewPost: true,
   actions: {
-    postFormShow() {
-      this.set('addNewPost', true);
-    },
-    postFormHide() {
-      this.set('addNewPost', false);
-    },
     savePost() {
       var params = {
         author: this.get('author'),
@@ -19,5 +12,5 @@ export default Ember.Component.extend({
       this.set('addNewPost', false);
       this.sendAction('savePost', params);
     }
-  }
+ }
 });

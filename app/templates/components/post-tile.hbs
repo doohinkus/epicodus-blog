@@ -7,6 +7,7 @@
       {{post.body}}
     </p>
     <div class="admin">
+      {{#link-to 'post' post.id}}{{post.title}}{{/link-to}}
       <button class="btn btn-warning" {{action 'edit' post}}>Edit</button>
       <button class="btn btn-danger" {{action 'delete' post}}>Delete</button>
     </div>
