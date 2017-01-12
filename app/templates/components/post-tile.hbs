@@ -1,4 +1,6 @@
-<div class="post-tile">
+<div class="post-tile center-block">
+  <div class="center-block">
+
     <h2>
       {{post.title}}
     </h2>
@@ -10,4 +12,5 @@
       {{#link-to 'post' post.id class='btn btn-primary btn-small'}}Edit{{/link-to}}
       <button class="btn btn-danger" {{action 'delete' post}}>Delete</button>
     </div>
+  </div>
 </div>

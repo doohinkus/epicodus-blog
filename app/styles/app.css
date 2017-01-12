@@ -1,0 +1,12 @@
+.form-group{
+  /*border: 2px solid black;*/
+}
+[class*="col-"]{
+  /*border: 1px solid green;*/
+}
+img{
+  width: 300px;
+}
+.center-block{
+    /*border: 1px solid green;*/
+}
