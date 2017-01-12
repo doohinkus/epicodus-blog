@@ -23,5 +23,12 @@
   },{
     "image":"https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
     "text": "more sample text"
+  }],
+  "comments": [{
+    "words":"very pretty",
+    "rating": "5"
+  },{
+    "words":"nice!!!!",
+    "rating": "5"
   }]
 }

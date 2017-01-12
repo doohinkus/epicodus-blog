@@ -1,2 +1,9 @@
 <!-- <h2>{{model.title}}</h2> -->
+<h2> Comments </h2>
+<ul>
+  {{#each model.comments as |comment|}}  
+  {{comment-tile comment=comment}}
+  {{/each}}
+</ul>
+{{new-comment saveComment="saveComment" post=model}}
 {{post-detail post=model update="update"}}
