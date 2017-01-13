@@ -1,11 +1,11 @@
 <!-- <h2>{{model.title}}</h2> -->
-{{post-detail post=model update="update" destroyComment="destroyComment"}}
+{{post-detail post=model update="updateComments" destroyComment="destroyComment"}}
 
 <h2> Comments </h2>
-{{new-comment saveComment="saveComment" post=model}}
+{{new-comment saveComment="saveComment" updateComments="updateComments" post=model}}
 
 <ul>
   {{#each model.comments as |comment|}}
-    {{comment-tile comment=comment delete= "delete" destroyComment="destroyComment"}}
+    {{comment-tile comment=comment delete="delete" destroyComment="destroyComment"}}
   {{/each}}
 </ul>

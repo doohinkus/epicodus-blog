@@ -7,5 +7,6 @@ export default Ember.Component.extend({
         this.sendAction('destroyComment', comment);
       }
     }
+
   }
 });

@@ -1,0 +1,17 @@
+Comment: {{comment.words}}
+Rating: {{comment.rating}}
+
+<button {{action 'delete' comment}}>Delete</button>
+<form>
+      <div class="form-group">
+        <label for="words">Comment</label>
+        {{input value=words id="words" placeholder=comment.words}}
+      </div>
+
+      <div class="form-group">
+        <label for="type">Type</label>
+        {{input value=rating id="rating" placeholder=comment.rating}}
+      </div>
+
+      <button {{action 'update' comment}}>Update</button>
+  </form>

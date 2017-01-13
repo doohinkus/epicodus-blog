@@ -1,3 +1,3 @@
-<li>{{comment.rating}} - {{comment.words}} is what thye say</li>
-
+<li>{{comment.rating}} - {{comment.words}} is what they say</li>
+ {{#link-to 'comment' comment.id}}{{comment.words}} {{/link-to}}
 <button {{action 'delete' comment}}>Delete Comment</button>

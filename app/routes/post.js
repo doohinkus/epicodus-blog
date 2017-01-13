@@ -16,10 +16,21 @@ export default Ember.Route.extend({
      this.transitionTo('post', post);
 
    },
+    updateComment(comment, params) {
+     Object.keys(params).forEach(function(key) {
+       if(params[key]!==undefined) {
+         comment.set(key,params[key]);
+       }
+     });
+     comment.save();
+    //  this.transitionTo('index');
+     this.transitionTo('comment', comment);
+
+   },
    destroyComment(comment) {
      comment.destroyRecord();
-    //  this.transitionTo('index');
-      this.transitionTo('post', post);
+     this.transitionTo('index');
+      // this.transitionTo('post', post);
    },
    destroyPost(post) {
     post.destroyRecord();
