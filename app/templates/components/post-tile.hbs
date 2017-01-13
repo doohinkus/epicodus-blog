@@ -8,12 +8,15 @@
     <p>
       {{post.body}}
     </p>
+    <p>
+      Written by: {{post.author}}
+    </p>
     <div class="admin">
       {{#link-to 'post' post.id class='btn btn-primary btn-small'}}Edit{{/link-to}}
       <button class="btn btn-danger" {{action 'delete' post}}>Delete</button>
     </div>
   </div>
-  <h2> Reviews </h2>
+  <h2> Comments </h2>
 <ul>
   {{#each post.comments as |comment|}}
     {{comment-tile comment=comment}}

@@ -16,6 +16,11 @@ export default Ember.Route.extend({
      this.transitionTo('post', post);
 
    },
+   destroyComment(comment) {
+     comment.destroyRecord();
+    //  this.transitionTo('index');
+      this.transitionTo('post', post);
+   },
    destroyPost(post) {
     post.destroyRecord();
     this.transitionTo('index');
